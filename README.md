@@ -195,8 +195,7 @@ This project is proprietary and confidential. Unauthorized copying, modification
 
 ## Credits
 
-- Design and Development: [Zwikcy Technology]
-- Photos: [Various sources]
+- Design and Development: <a href="https://zWickytechnology.com"> Zwikcy Technology</a>
 
 ## Contact
 
