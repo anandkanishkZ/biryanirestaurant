@@ -18,12 +18,16 @@ import BiryaniRice2 from '../assets/img/8.jpeg';
 import LassiPlain from '../assets/img/12.png';
 import LassiKesar from '../assets/img/13.png';
 import LassiKaju from '../assets/img/14.webp';
+import muttonbiryanni from '../assets/img/mutton-biryani.jpeg';
+import MixDryFruitsLassi from '../assets/img/mix-dry-fruit.jpeg'; // New import
+import BadamLassi from '../assets/img/badam-lassi.jpeg'; // New import
+import ChocolateLassi from '../assets/img/choclate-lassi.jpeg'; // New import
 
 interface MenuItem {
   id: string;
   name: string;
   description: string;
-  image: string; // Type remains string for external URLs, but we'll use imported variables for local images
+  image: string;
   prices: {
     single?: number;
     double?: number;
@@ -57,7 +61,7 @@ const Menu = () => {
       id: 'chicken-matka-biryani',
       name: 'Chicken Matka Biryani',
       description: 'Traditional dum-cooked chicken biryani served in an earthen pot',
-      image: HaidrabadiMatkaBiryani, // Use imported image
+      image: HaidrabadiMatkaBiryani,
       prices: {
         single: 350,
         double: 650,
@@ -70,7 +74,7 @@ const Menu = () => {
       id: 'mutton-matka-biryani',
       name: 'Mutton Matka Biryani',
       description: 'Tender mutton dum biryani in a traditional matka',
-      image: MuttonBiryani, // Use imported image
+      image: muttonbiryanni,
       prices: {
         single: 450,
         double: 900,
@@ -83,7 +87,7 @@ const Menu = () => {
       id: 'veg-matka-biryani',
       name: 'Veg Matka Biryani',
       description: 'Vegetarian biryani cooked in a matka',
-      image: VegBiryani, // Use imported image
+      image: VegBiryani,
       prices: {
         double: 500,
       },
@@ -93,7 +97,7 @@ const Menu = () => {
       id: 'egg-matka-biryani',
       name: 'Egg Matka Biryani',
       description: 'Egg biryani cooked in a matka',
-      image: EggBiryani, // Use imported image
+      image: EggBiryani,
       prices: {
         double: 500,
       },
@@ -103,7 +107,7 @@ const Menu = () => {
       id: 'paneer-matka-biryani',
       name: 'Paneer Matka Biryani',
       description: 'Paneer biryani cooked in a matka',
-      image: PaneerBiryani, // Use imported image
+      image: PaneerBiryani,
       prices: {
         double: 600,
       },
@@ -113,7 +117,7 @@ const Menu = () => {
       id: 'grilled-chicken',
       name: 'Grilled Chicken',
       description: 'Full grilled chicken',
-      image: GrilledChickenImg, // Use imported image
+      image: GrilledChickenImg,
       prices: {
         oneKg: 1000,
       },
@@ -123,7 +127,7 @@ const Menu = () => {
       id: 'grilled-chicken-rice',
       name: 'Grilled Chicken + Rice',
       description: 'Grilled chicken served with rice',
-      image: GrilledChickenRice, // Use imported image
+      image: GrilledChickenRice,
       prices: {
         double: 1350,
         family: 1550,
@@ -135,7 +139,7 @@ const Menu = () => {
       id: 'mutton-mandi',
       name: 'Mutton Mandi',
       description: 'Traditional mutton mandi served with aromatic rice',
-      image: MuttonMandi, // Use imported image
+      image: MuttonMandi,
       prices: {
         double: 1100,
         family: 2100,
@@ -146,7 +150,7 @@ const Menu = () => {
       id: 'handi-chicken',
       name: 'Handi Chicken Curry',
       description: 'Handi chicken curry',
-      image: HandiChicken, // Use imported image
+      image: HandiChicken,
       prices: {
         halfKg: 700,
         oneKg: 1250,
@@ -157,7 +161,7 @@ const Menu = () => {
       id: 'handi-mutton',
       name: 'Handi Mutton Curry',
       description: 'Handi mutton curry',
-      image: HandiMutton, // Use imported image
+      image: HandiMutton,
       prices: {
         halfKg: 1200,
         oneKg: 2250,
@@ -168,7 +172,7 @@ const Menu = () => {
       id: 'biryani-rice-1',
       name: 'Additional Biryani Rice (1 Person)',
       description: 'Extra biryani rice for 1 person',
-      image: VegBiryani, // Reusing imported image
+      image: VegBiryani,
       prices: {
         single: 200,
       },
@@ -178,7 +182,7 @@ const Menu = () => {
       id: 'biryani-rice-2',
       name: 'Additional Biryani Rice (2 Person)',
       description: 'Extra biryani rice for 2 persons',
-      image: BiryaniRice2, // Use imported image
+      image: BiryaniRice2,
       prices: {
         double: 380,
       },
@@ -188,7 +192,7 @@ const Menu = () => {
       id: 'lassi-plain',
       name: 'Matka Lassi Plain',
       description: 'Plain matka lassi',
-      image: LassiPlain, // Use imported image
+      image: LassiPlain,
       prices: {
         single: 130,
       },
@@ -198,7 +202,7 @@ const Menu = () => {
       id: 'lassi-kesar',
       name: 'Matka Lassi Kesar',
       description: 'Kesar matka lassi',
-      image: LassiKesar, // Use imported image
+      image: LassiKesar,
       prices: {
         single: 150,
       },
@@ -208,7 +212,7 @@ const Menu = () => {
       id: 'lassi-kaju',
       name: 'Matka Lassi Kaju',
       description: 'Kaju matka lassi',
-      image: LassiKaju, // Use imported image
+      image: LassiKaju,
       prices: {
         single: 150,
       },
@@ -218,7 +222,7 @@ const Menu = () => {
       id: 'lassi-badam',
       name: 'Matka Lassi Badam',
       description: 'Badam matka lassi',
-      image: 'https://images.pexels.com/photos/4051534/pexels-photo-4051534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      image: BadamLassi,
       prices: {
         single: 150,
       },
@@ -228,7 +232,7 @@ const Menu = () => {
       id: 'lassi-chocolate',
       name: 'Matka Lassi Chocolate',
       description: 'Chocolate matka lassi',
-      image: 'https://images.pexels.com/photos/4051534/pexels-photo-4051534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      image: ChocolateLassi,
       prices: {
         single: 150,
       },
@@ -238,7 +242,7 @@ const Menu = () => {
       id: 'lassi-mix-dry-fruits',
       name: 'Matka Lassi Mix Dry Fruits',
       description: 'Mix dry fruits matka lassi',
-      image: 'https://images.pexels.com/photos/4051534/pexels-photo-4051534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      image: MixDryFruitsLassi,
       prices: {
         single: 180,
       },

@@ -12,12 +12,12 @@ import ml from '../assets/img/matka-lassi.jpeg';
 
 const Home = () => {
   return (
-    <div className="pt-16">
+    <div className="pt-0">
       {/* Hero Section */}
       <section className="relative h-[80vh] min-h-[600px] bg-black/50 flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/7353380/pexels-photo-7353380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src={hmb}
             alt="Hyderabadi Biryani"
             className="w-full h-full object-cover opacity-70"
           />
@@ -31,7 +31,7 @@ const Home = () => {
             </h1>
            
             <p className="text-xl md:text-2xl text-white mb-8">
-              Authentic Hyderabadi Flavors in Bharatpur
+              Authentic Hyderabadi Flavors in Bharatpur Chitwan
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <WhatsAppButton className="text-lg" />
