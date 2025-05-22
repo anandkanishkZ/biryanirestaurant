@@ -202,4 +202,4 @@ This project is proprietary and confidential. Unauthorized copying, modification
 
 For any queries or support, please contact:
 - Email: [contact@zwickytechnology.com]
-- Website: [zWickytechnology.com]
+- Website: [https://zWickytechnology.com]
